@@ -13,8 +13,8 @@
         </a>
 
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
-          <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
+          <li><a href="{% url 'index' %}" class="nav-link px-2 text-secondary">BuyThings</a></li>
+          <li><a href="{% url 'categories' %}" class="nav-link px-2 text-white">Categories</a></li>
           <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
           <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
           <li><a href="#" class="nav-link px-2 text-white">About</a></li>
@@ -25,12 +25,14 @@
         </form>
 
         <div class="text-end">
+          {% if user.is_authenticated %}
           <button type="button" class="btn btn-outline-light me-2">
               <a href="{% url 'login' %}">Login</a>
           </button>
           <button type="button" class="btn btn-warning">
               <a href="{% url 'signup' %}">Sign-Up</a>
           </button>
+          {% endif %}
         </div>
       </div>
     </div>
