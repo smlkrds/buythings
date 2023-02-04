@@ -1,10 +1,10 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    {% for category_object in categories %}
+    {% for category in categories %}
         <li>
             <ul>
-                <a href="#" class="nav-link px-2 text-black">{{ category_object.category}}</a>
+                <a href="{% url 'product_list' category.pk %}" class="nav-link px-2 text-black">{{ category.name}}</a>
             </ul>
         </li>
     {% endfor %}
