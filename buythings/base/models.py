@@ -18,8 +18,8 @@ class Product(models.Model):
         return self.name
 
 class Comment(models.Model):
-    content = models.CharField(max_length=200)
+    text = models.TextField(default='')
     commented_product = models.ForeignKey(Product, on_delete=models.CASCADE)
     commentator = models.ForeignKey(User, on_delete=models.CASCADE)
     def __str__(self):
-        return self.content
+        return self.text

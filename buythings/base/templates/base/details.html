@@ -11,8 +11,20 @@
                     <br>
                     <a class="btn btn-outline-secondary" href="#">Buy</a>
                 </div>
-                <div class="product-device shadow-sm d-none d-md-block"></div>
-                <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+            </div>
+            <div>
+                <h3>Comments</h3>
+                {% for comment in comments %}
+                    <li>{{ comment.text }} by {{ comment.commentator }}</li>
+                {% endfor %}
+
+                <br>
+                <h4>Add a comment</h4>
+                <form method="post">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button type="submit">Submit</button>
+                </form>
             </div>
     {% endif %}
 {% endblock %}
