@@ -5,15 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42951b90-dfaf-4ea5-a861-f16da576eeb1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/base/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base/templates/base/search.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cart/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cart/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cart/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cart/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cart/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cart/templates/cart/cart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cart/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cart/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cart/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/base/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/templates/base/details.html" beforeDir="false" afterPath="$PROJECT_DIR$/base/templates/base/details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/templates/base/product_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/base/templates/base/product_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/templates/base/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/base/templates/base/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buythings/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/buythings/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/buythings/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/buythings/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
@@ -48,22 +55,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;//wsl$/Ubuntu/home/samilkardas/venv/bin/buythings/buythings/accounts/templates/accounts&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "//wsl$/Ubuntu/home/samilkardas/venv/bin/buythings/buythings/accounts/templates/accounts",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PythonContentEntriesConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="\\wsl$\Ubuntu\home\samilkardas\venv\bin\buythings\buythings\accounts\templates\accounts" />
@@ -148,7 +155,10 @@
       <workItem from="1675697678633" duration="1950000" />
       <workItem from="1675772249287" duration="3471000" />
       <workItem from="1675776217436" duration="1504000" />
-      <workItem from="1675803903827" duration="2099000" />
+      <workItem from="1675803903827" duration="2177000" />
+      <workItem from="1675856846256" duration="1012000" />
+      <workItem from="1675869725850" duration="863000" />
+      <workItem from="1675989574394" duration="6660000" />
     </task>
     <servers />
   </component>

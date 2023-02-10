@@ -11,7 +11,7 @@
                         <p class="lead fw-normal">{{ product.price }}$</p>
                         <img src="{{ product.image.url }} " alt="{{ product.name }}">
                         <br>
-                        <a class="btn btn-outline-secondary" href="#">Buy</a>
+                        <a class="btn btn-outline-secondary" href="{% url 'add_to_cart' product.pk %}">Add to cart</a>
                     </div>
                     <div class="product-device shadow-sm d-none d-md-block"></div>
                     <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
