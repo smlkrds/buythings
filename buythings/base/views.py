@@ -1,8 +1,9 @@
-from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib.auth import logout
+from django.shortcuts import render, get_object_or_404, redirect
 
-from .forms import CommentForm
+from .forms import CommentForm, ProductForm
 from .models import Product, Category, Comment
+
 
 def index(request):
     products = Product.objects.all()
@@ -50,3 +51,22 @@ def search(request):
 def logout_view(request):
     logout(request)
     return redirect('index')
+
+
+def add_product(request):
+    if request.method == 'POST':
+        form = ProductForm(request.POST, request.FILES)
+        if form.is_valid():
+            product = form.save(commit=False)
+            product.seller = request.user
+            product.active = True
+            product.save()
+            return redirect('index')
+    else:
+        form = ProductForm()
+    return render(request, 'base/sell_stuff.html', {'form': form})
+
+
+def my_stuff(request):
+    products = Product.objects.filter(seller=request.user)
+    return render(request, 'base/my_stuff.html', {'products': products})

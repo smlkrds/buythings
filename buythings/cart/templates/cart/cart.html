@@ -9,6 +9,7 @@
                     <p class="lead fw-normal">{{ product.description }}</p>
                     <p class="lead fw-normal">{{ product.price }}$</p>
                     <img src="{{ product.image.url }} " alt="{{ product.name }}">
+                   <a href="{% url 'remove_from_cart' product.id %}" class="btn btn-danger">Remove</a>
                     <br>
                 </div>
         {% endif %}
