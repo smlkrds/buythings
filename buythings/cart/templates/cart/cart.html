@@ -8,7 +8,9 @@
                   <h1 class="display-4 fw-normal">{{ product.name }}</h1>
                     <p class="lead fw-normal">{{ product.description }}</p>
                     <p class="lead fw-normal">{{ product.price }}$</p>
+                    <p class="lead fw-normal">To contact with the seller: {{ product.contact_number }}</p>
                     <img src="{{ product.image.url }} " alt="{{ product.name }}">
+                    <br>
                    <a href="{% url 'remove_from_cart' product.id %}" class="btn btn-danger">Remove</a>
                     <br>
                 </div>
