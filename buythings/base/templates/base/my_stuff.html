@@ -10,6 +10,8 @@
                         <p class="lead fw-normal">{{ product.description }}</p>
                         <p class="lead fw-normal">{{ product.price }}$</p>
                         <img src="{{ product.image.url }} " alt="{{ product.name }}">
+                        <br>
+                        <a href="{% url 'remove_my_stuff' product.pk %}" class="btn btn-danger">Delete</a>
                     </div>
                     <div class="product-device shadow-sm d-none d-md-block"></div>
                     <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>

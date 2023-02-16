@@ -70,3 +70,8 @@ def add_product(request):
 def my_stuff(request):
     products = Product.objects.filter(seller=request.user)
     return render(request, 'base/my_stuff.html', {'products': products})
+
+
+def remove_my_stuff(request, pk):
+    Product.objects.get(id=pk).delete()
+    return redirect('my_stuff')
