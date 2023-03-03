@@ -1,5 +1,4 @@
 # BuyThings
-#### Video Demo:  <https://youtu.be/cSogmIt-Q3o>
 #### Description: BuyThings is a website that you can buy and sell stuff.
 #### BuyThings made by using Django framework and sqlite
 #### File structure: 
