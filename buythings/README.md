@@ -1,6 +1,6 @@
 # BuyThings
 #### Description: BuyThings is a website that you can buy and sell stuff.
-#### BuyThings made by using Django framework and sqlite
+#### BuyThings made by using Html, Bootstrap, Django framework and sqlite
 #### File structure: 
     -buythings*
         -accounts
